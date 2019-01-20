@@ -55,14 +55,32 @@ div.content {
   }
 }
 </style>
+  <script>
+$('#about').click(function() {
+  $('div').html('ABOUT');
+ });
+
+$('#news').click(function() {
+  $('div').html('NEWS');
+});
+
+
+$('#contact').click(function() {
+  $('div').html('CONTACT');
+});
+    
+    $('#docs').click(function() {
+  $('div').html('DOCS');
+});
+  </script>
 </head>
 <body>
 
 <ul class="sidenav">
-  <li><a class="active" href="#home">About</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">Documentation</a></li>
+  <li><a class="active" href="#home" id="about">About</a></li>
+  <li><a href="#news id="news">News</a></li>
+  <li><a href="#contact" id="contact">Contact</a></li>
+  <li><a href="#about" id="docs">Documentation</a></li>
 </ul>
 
 <div class="content">
@@ -72,7 +90,6 @@ div.content {
   <p>VX 2.0 - Released December 2018</p>
   <p>VX 3.0 - Released January 2019</p>
   <p>VX 4.0 - Coming soon in February 2019</p>
-  <h2>2.Syntax</h2>
   <h2>3.Creators</h2>
   <p>Byte(Sergey Kabirov) - Main Creator,Programmer</p>
   <p>js6pak - Helper,Designer</p>
