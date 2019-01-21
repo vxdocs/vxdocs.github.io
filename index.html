@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {margin: 0; font-family: "Ubuntu";}
-  div {align: center; }
-</style>
-</head>
-<body>
+<title>Feedback Form</title>
 
-<div class="content">
-  <h1 style="align: center">About</h1>
-  <h2>1.Versions</h2>
-  <p>VX 1.0 - Released September 2018</p>
-  <p>VX 2.0 - Released December 2018</p>
-  <p>VX 3.0 - Released January 2019</p>
-  <p>VX 4.0 - Coming soon in February 2019</p>
-  <h2>3.Creators</h2>
-  <p>Byte(Sergey Kabirov) - Main Creator,Programmer</p>
-  <p>js6pak - Helper,Designer</p>
-</div>
-
-</body>
-</html>
+<h1>Feedback Form</h1>
+<form method="post" action="send_mail.php">
+<p>
+<label>First Name
+<input type="text" name="first_name" required>
+</label> 
+</p>
+<p>
+<label>Email 
+<input type="email" name="email_address">
+</label>
+</p>
+<p>
+<label>Comments
+<textarea name="comments" maxlength="500"></textarea>
+</label>
+</p>
+<p><button>Submit the form</button></p>
+</form>
